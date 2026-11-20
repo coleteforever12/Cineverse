@@ -52,7 +52,6 @@
             btnBannerSeguinte = new Button();
             btnBannerAnterior = new Button();
             pnlBannerTexto = new Panel();
-            lblBannerGeneros2 = new Label();
             btnVerDetalhes = new Button();
             lblBannerSinopse = new Label();
             lblBannerGeneros = new Label();
@@ -60,21 +59,21 @@
             lblBannerDestaque = new Label();
             lblTrendingNota1 = new Label();
             pnlTrendingCard4 = new Panel();
-            label1 = new Label();
-            label2 = new Label();
-            pictureBox1 = new PictureBox();
+            lblTrendingNota4 = new Label();
+            lblTrendingNome4 = new Label();
+            picTrendingPoster4 = new PictureBox();
             pnlTrendingCard3 = new Panel();
-            label3 = new Label();
-            label4 = new Label();
-            pictureBox2 = new PictureBox();
+            lblTrendingNota3 = new Label();
+            lblTrendingNome3 = new Label();
+            picTrendingPoster3 = new PictureBox();
             pnlTrendingCard2 = new Panel();
-            label5 = new Label();
-            label6 = new Label();
-            pictureBox3 = new PictureBox();
+            lblTrendingNota2 = new Label();
+            lblTrendingNome2 = new Label();
+            picTrendingPoster2 = new PictureBox();
             pnlTrendingCard5 = new Panel();
-            label7 = new Label();
-            label8 = new Label();
-            pictureBox4 = new PictureBox();
+            lblTrendingNota5 = new Label();
+            lblTrendingNome5 = new Label();
+            picTrendingPoster5 = new PictureBox();
             pnlTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picAvatar).BeginInit();
             pnlSidebar.SuspendLayout();
@@ -85,13 +84,13 @@
             pnlBannerImagem.SuspendLayout();
             pnlBannerTexto.SuspendLayout();
             pnlTrendingCard4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picTrendingPoster4).BeginInit();
             pnlTrendingCard3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picTrendingPoster3).BeginInit();
             pnlTrendingCard2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picTrendingPoster2).BeginInit();
             pnlTrendingCard5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picTrendingPoster5).BeginInit();
             SuspendLayout();
             // 
             // pnlTopBar
@@ -232,13 +231,14 @@
             btnNavHome.Padding = new Padding(20, 0, 0, 0);
             btnNavHome.Size = new Size(220, 48);
             btnNavHome.TabIndex = 0;
-            btnNavHome.Text = "\tHome";
+            btnNavHome.Text = "Home";
             btnNavHome.TextAlign = ContentAlignment.MiddleLeft;
             btnNavHome.UseVisualStyleBackColor = false;
             // 
             // pnlConteudo
             // 
             pnlConteudo.AutoScroll = true;
+            pnlConteudo.Controls.Add(pnlTrendingCard5);
             pnlConteudo.Controls.Add(pnlTrendingCard2);
             pnlConteudo.Controls.Add(pnlTrendingCard3);
             pnlConteudo.Controls.Add(pnlTrendingCard4);
@@ -389,7 +389,6 @@
             // 
             // pnlBannerTexto
             // 
-            pnlBannerTexto.Controls.Add(lblBannerGeneros2);
             pnlBannerTexto.Controls.Add(btnVerDetalhes);
             pnlBannerTexto.Controls.Add(lblBannerSinopse);
             pnlBannerTexto.Controls.Add(lblBannerGeneros);
@@ -399,15 +398,6 @@
             pnlBannerTexto.Name = "pnlBannerTexto";
             pnlBannerTexto.Size = new Size(380, 300);
             pnlBannerTexto.TabIndex = 0;
-            // 
-            // lblBannerGeneros2
-            // 
-            lblBannerGeneros2.ForeColor = Color.FromArgb(154, 160, 181);
-            lblBannerGeneros2.Location = new Point(24, 112);
-            lblBannerGeneros2.Name = "lblBannerGeneros2";
-            lblBannerGeneros2.Size = new Size(332, 24);
-            lblBannerGeneros2.TabIndex = 5;
-            lblBannerGeneros2.Text = "Ação · Fantasia · Aventura";
             // 
             // btnVerDetalhes
             // 
@@ -476,171 +466,170 @@
             // pnlTrendingCard4
             // 
             pnlTrendingCard4.BackColor = Color.FromArgb(22, 26, 43);
-            pnlTrendingCard4.Controls.Add(label1);
-            pnlTrendingCard4.Controls.Add(label2);
-            pnlTrendingCard4.Controls.Add(pictureBox1);
+            pnlTrendingCard4.Controls.Add(lblTrendingNota4);
+            pnlTrendingCard4.Controls.Add(lblTrendingNome4);
+            pnlTrendingCard4.Controls.Add(picTrendingPoster4);
             pnlTrendingCard4.Location = new Point(582, 392);
             pnlTrendingCard4.Name = "pnlTrendingCard4";
             pnlTrendingCard4.Size = new Size(170, 292);
             pnlTrendingCard4.TabIndex = 3;
             // 
-            // label1
+            // lblTrendingNota4
             // 
-            label1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(244, 185, 66);
-            label1.Location = new Point(8, 268);
-            label1.Name = "label1";
-            label1.Size = new Size(154, 20);
-            label1.TabIndex = 4;
-            label1.Text = "★ 8.7";
+            lblTrendingNota4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTrendingNota4.ForeColor = Color.FromArgb(244, 185, 66);
+            lblTrendingNota4.Location = new Point(8, 268);
+            lblTrendingNota4.Name = "lblTrendingNota4";
+            lblTrendingNota4.Size = new Size(154, 20);
+            lblTrendingNota4.TabIndex = 4;
+            lblTrendingNota4.Text = "★ 8.7";
             // 
-            // label2
+            // lblTrendingNome4
             // 
-            label2.AutoEllipsis = true;
-            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(8, 246);
-            label2.Name = "label2";
-            label2.Size = new Size(154, 22);
-            label2.TabIndex = 3;
-            label2.Text = "Título do anime";
+            lblTrendingNome4.AutoEllipsis = true;
+            lblTrendingNome4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTrendingNome4.Location = new Point(8, 246);
+            lblTrendingNome4.Name = "lblTrendingNome4";
+            lblTrendingNome4.Size = new Size(154, 22);
+            lblTrendingNome4.TabIndex = 3;
+            lblTrendingNome4.Text = "Título do anime";
             // 
-            // pictureBox1
+            // picTrendingPoster4
             // 
-            pictureBox1.BackColor = Color.FromArgb(31, 36, 56);
-            pictureBox1.Cursor = Cursors.Hand;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(170, 240);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            picTrendingPoster4.BackColor = Color.FromArgb(31, 36, 56);
+            picTrendingPoster4.Cursor = Cursors.Hand;
+            picTrendingPoster4.Location = new Point(0, 0);
+            picTrendingPoster4.Name = "picTrendingPoster4";
+            picTrendingPoster4.Size = new Size(170, 240);
+            picTrendingPoster4.SizeMode = PictureBoxSizeMode.Zoom;
+            picTrendingPoster4.TabIndex = 0;
+            picTrendingPoster4.TabStop = false;
             // 
             // pnlTrendingCard3
             // 
             pnlTrendingCard3.BackColor = Color.FromArgb(22, 26, 43);
-            pnlTrendingCard3.Controls.Add(pnlTrendingCard5);
-            pnlTrendingCard3.Controls.Add(label3);
-            pnlTrendingCard3.Controls.Add(label4);
-            pnlTrendingCard3.Controls.Add(pictureBox2);
+            pnlTrendingCard3.Controls.Add(lblTrendingNota3);
+            pnlTrendingCard3.Controls.Add(lblTrendingNome3);
+            pnlTrendingCard3.Controls.Add(picTrendingPoster3);
             pnlTrendingCard3.Location = new Point(396, 392);
             pnlTrendingCard3.Name = "pnlTrendingCard3";
             pnlTrendingCard3.Size = new Size(170, 292);
             pnlTrendingCard3.TabIndex = 4;
             // 
-            // label3
+            // lblTrendingNota3
             // 
-            label3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.FromArgb(244, 185, 66);
-            label3.Location = new Point(8, 268);
-            label3.Name = "label3";
-            label3.Size = new Size(154, 20);
-            label3.TabIndex = 4;
-            label3.Text = "★ 8.7";
+            lblTrendingNota3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTrendingNota3.ForeColor = Color.FromArgb(244, 185, 66);
+            lblTrendingNota3.Location = new Point(8, 268);
+            lblTrendingNota3.Name = "lblTrendingNota3";
+            lblTrendingNota3.Size = new Size(154, 20);
+            lblTrendingNota3.TabIndex = 4;
+            lblTrendingNota3.Text = "★ 8.7";
             // 
-            // label4
+            // lblTrendingNome3
             // 
-            label4.AutoEllipsis = true;
-            label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(8, 246);
-            label4.Name = "label4";
-            label4.Size = new Size(154, 22);
-            label4.TabIndex = 3;
-            label4.Text = "Título do anime";
+            lblTrendingNome3.AutoEllipsis = true;
+            lblTrendingNome3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTrendingNome3.Location = new Point(8, 246);
+            lblTrendingNome3.Name = "lblTrendingNome3";
+            lblTrendingNome3.Size = new Size(154, 22);
+            lblTrendingNome3.TabIndex = 3;
+            lblTrendingNome3.Text = "Título do anime";
             // 
-            // pictureBox2
+            // picTrendingPoster3
             // 
-            pictureBox2.BackColor = Color.FromArgb(31, 36, 56);
-            pictureBox2.Cursor = Cursors.Hand;
-            pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(170, 240);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 0;
-            pictureBox2.TabStop = false;
+            picTrendingPoster3.BackColor = Color.FromArgb(31, 36, 56);
+            picTrendingPoster3.Cursor = Cursors.Hand;
+            picTrendingPoster3.Location = new Point(0, 0);
+            picTrendingPoster3.Name = "picTrendingPoster3";
+            picTrendingPoster3.Size = new Size(170, 240);
+            picTrendingPoster3.SizeMode = PictureBoxSizeMode.Zoom;
+            picTrendingPoster3.TabIndex = 0;
+            picTrendingPoster3.TabStop = false;
             // 
             // pnlTrendingCard2
             // 
             pnlTrendingCard2.BackColor = Color.FromArgb(22, 26, 43);
-            pnlTrendingCard2.Controls.Add(label5);
-            pnlTrendingCard2.Controls.Add(label6);
-            pnlTrendingCard2.Controls.Add(pictureBox3);
+            pnlTrendingCard2.Controls.Add(lblTrendingNota2);
+            pnlTrendingCard2.Controls.Add(lblTrendingNome2);
+            pnlTrendingCard2.Controls.Add(picTrendingPoster2);
             pnlTrendingCard2.Location = new Point(210, 392);
             pnlTrendingCard2.Name = "pnlTrendingCard2";
             pnlTrendingCard2.Size = new Size(170, 292);
             pnlTrendingCard2.TabIndex = 5;
             // 
-            // label5
+            // lblTrendingNota2
             // 
-            label5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.FromArgb(244, 185, 66);
-            label5.Location = new Point(8, 268);
-            label5.Name = "label5";
-            label5.Size = new Size(154, 20);
-            label5.TabIndex = 4;
-            label5.Text = "★ 8.7";
+            lblTrendingNota2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTrendingNota2.ForeColor = Color.FromArgb(244, 185, 66);
+            lblTrendingNota2.Location = new Point(8, 268);
+            lblTrendingNota2.Name = "lblTrendingNota2";
+            lblTrendingNota2.Size = new Size(154, 20);
+            lblTrendingNota2.TabIndex = 4;
+            lblTrendingNota2.Text = "★ 8.7";
             // 
-            // label6
+            // lblTrendingNome2
             // 
-            label6.AutoEllipsis = true;
-            label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(8, 246);
-            label6.Name = "label6";
-            label6.Size = new Size(154, 22);
-            label6.TabIndex = 3;
-            label6.Text = "Título do anime";
+            lblTrendingNome2.AutoEllipsis = true;
+            lblTrendingNome2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTrendingNome2.Location = new Point(8, 246);
+            lblTrendingNome2.Name = "lblTrendingNome2";
+            lblTrendingNome2.Size = new Size(154, 22);
+            lblTrendingNome2.TabIndex = 3;
+            lblTrendingNome2.Text = "Título do anime";
             // 
-            // pictureBox3
+            // picTrendingPoster2
             // 
-            pictureBox3.BackColor = Color.FromArgb(31, 36, 56);
-            pictureBox3.Cursor = Cursors.Hand;
-            pictureBox3.Location = new Point(0, 0);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(170, 240);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 0;
-            pictureBox3.TabStop = false;
+            picTrendingPoster2.BackColor = Color.FromArgb(31, 36, 56);
+            picTrendingPoster2.Cursor = Cursors.Hand;
+            picTrendingPoster2.Location = new Point(0, 0);
+            picTrendingPoster2.Name = "picTrendingPoster2";
+            picTrendingPoster2.Size = new Size(170, 240);
+            picTrendingPoster2.SizeMode = PictureBoxSizeMode.Zoom;
+            picTrendingPoster2.TabIndex = 0;
+            picTrendingPoster2.TabStop = false;
             // 
             // pnlTrendingCard5
             // 
             pnlTrendingCard5.BackColor = Color.FromArgb(22, 26, 43);
-            pnlTrendingCard5.Controls.Add(label7);
-            pnlTrendingCard5.Controls.Add(label8);
-            pnlTrendingCard5.Controls.Add(pictureBox4);
-            pnlTrendingCard5.Location = new Point(8, 8);
+            pnlTrendingCard5.Controls.Add(lblTrendingNota5);
+            pnlTrendingCard5.Controls.Add(lblTrendingNome5);
+            pnlTrendingCard5.Controls.Add(picTrendingPoster5);
+            pnlTrendingCard5.Location = new Point(768, 392);
             pnlTrendingCard5.Name = "pnlTrendingCard5";
             pnlTrendingCard5.Size = new Size(170, 292);
             pnlTrendingCard5.TabIndex = 5;
             // 
-            // label7
+            // lblTrendingNota5
             // 
-            label7.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.FromArgb(244, 185, 66);
-            label7.Location = new Point(8, 268);
-            label7.Name = "label7";
-            label7.Size = new Size(154, 20);
-            label7.TabIndex = 4;
-            label7.Text = "★ 8.7";
+            lblTrendingNota5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTrendingNota5.ForeColor = Color.FromArgb(244, 185, 66);
+            lblTrendingNota5.Location = new Point(8, 268);
+            lblTrendingNota5.Name = "lblTrendingNota5";
+            lblTrendingNota5.Size = new Size(154, 20);
+            lblTrendingNota5.TabIndex = 4;
+            lblTrendingNota5.Text = "★ 8.7";
             // 
-            // label8
+            // lblTrendingNome5
             // 
-            label8.AutoEllipsis = true;
-            label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(8, 246);
-            label8.Name = "label8";
-            label8.Size = new Size(154, 22);
-            label8.TabIndex = 3;
-            label8.Text = "Título do anime";
+            lblTrendingNome5.AutoEllipsis = true;
+            lblTrendingNome5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTrendingNome5.Location = new Point(8, 246);
+            lblTrendingNome5.Name = "lblTrendingNome5";
+            lblTrendingNome5.Size = new Size(154, 22);
+            lblTrendingNome5.TabIndex = 3;
+            lblTrendingNome5.Text = "Título do anime";
             // 
-            // pictureBox4
+            // picTrendingPoster5
             // 
-            pictureBox4.BackColor = Color.FromArgb(31, 36, 56);
-            pictureBox4.Cursor = Cursors.Hand;
-            pictureBox4.Location = new Point(0, 0);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(170, 240);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 0;
-            pictureBox4.TabStop = false;
+            picTrendingPoster5.BackColor = Color.FromArgb(31, 36, 56);
+            picTrendingPoster5.Cursor = Cursors.Hand;
+            picTrendingPoster5.Location = new Point(0, 0);
+            picTrendingPoster5.Name = "picTrendingPoster5";
+            picTrendingPoster5.Size = new Size(170, 240);
+            picTrendingPoster5.SizeMode = PictureBoxSizeMode.Zoom;
+            picTrendingPoster5.TabIndex = 0;
+            picTrendingPoster5.TabStop = false;
             // 
             // FormHomepage
             // 
@@ -671,13 +660,13 @@
             pnlBannerTexto.ResumeLayout(false);
             pnlBannerTexto.PerformLayout();
             pnlTrendingCard4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picTrendingPoster4).EndInit();
             pnlTrendingCard3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picTrendingPoster3).EndInit();
             pnlTrendingCard2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picTrendingPoster2).EndInit();
             pnlTrendingCard5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picTrendingPoster5).EndInit();
             ResumeLayout(false);
         }
 
@@ -708,27 +697,26 @@
         private Panel pnlIndicador1;
         private Button btnBannerAnterior;
         private Button btnBannerSeguinte;
-        private Label lblBannerGeneros2;
         private Panel pnlTrendingCard1;
         private PictureBox picTrendingPoster1;
         private Label lblTrendingTitulo;
         private Label lblTrendingNome1;
         private Panel pnlTrendingCard2;
-        private Label label5;
-        private Label label6;
-        private PictureBox pictureBox3;
+        private Label lblTrendingNota2;
+        private Label lblTrendingNome2;
+        private PictureBox picTrendingPoster2;
         private Panel pnlTrendingCard3;
         private Panel pnlTrendingCard5;
-        private Label label7;
-        private Label label8;
-        private PictureBox pictureBox4;
-        private Label label3;
-        private Label label4;
-        private PictureBox pictureBox2;
+        private Label lblTrendingNota5;
+        private Label lblTrendingNome5;
+        private PictureBox picTrendingPoster5;
+        private Label lblTrendingNota3;
+        private Label lblTrendingNome3;
+        private PictureBox picTrendingPoster3;
         private Panel pnlTrendingCard4;
-        private Label label1;
-        private Label label2;
-        private PictureBox pictureBox1;
+        private Label lblTrendingNota4;
+        private Label lblTrendingNome4;
+        private PictureBox picTrendingPoster4;
         private Label lblTrendingNota1;
     }
 }
