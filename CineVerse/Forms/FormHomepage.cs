@@ -19,5 +19,10 @@ namespace CineVerse.Forms
         {
 
         }
+
+        private void lblTrendingTitulo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
